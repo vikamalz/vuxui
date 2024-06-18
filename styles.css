@@ -1,0 +1,555 @@
+:root {
+    --hero-h1-color: #f1f1f1;
+    --hero-h1-font: 'CabinetGrotesk', sans-serif;
+    --hero-h1-height: 98px;
+    --hero-h1-size: 120px;
+    --hero-h1-size-mobile: 42px;
+    --hero-h1-weight: 400;
+    --hero-p1-color: #F1F1F1;
+    --hero-p1-font: 'Karla', sans-serif;
+    --hero-p1-height: 32px;
+    --hero-p1-size: 20px;
+    --hero-h2-color: #F1F1F1;
+    --hero-h2-size: 20px;
+    --hero-h2-font: 'Karla', sans-serif;
+    --hero-h2-height: 32px;
+    --background-color: #111111;
+    --link-color: #F1F1F1;
+    --link-hover-color: #6E6E6E;
+    --arrow-color: #F1F1F1;
+    --button-background-color: #EBE8F0;
+    --button-color: #222121;
+    --button-hover-background-color: #D8D4E0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--background-color);
+    color: var(--link-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: var(--background-color); 
+    padding: 3rem 0;
+    text-align: left;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding-left: 3rem;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-family: 'CabinetGrotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+header nav ul li a:hover {
+    color: var(--link-hover-color);
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.sticky-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 1rem 0;
+    z-index: 999;
+}
+
+.regular-text {
+    font-weight: normal;
+}
+
+.scroll-down-button {
+    text-decoration: none;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--arrow-color); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bounce 1s infinite;
+}
+
+.arrow-down {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    font-size: 36px; 
+    color: var(--arrow-color); 
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.hero {
+    text-align: left;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 200px;
+}
+
+.hero h2 {
+    font-family: var(--hero-h2-font);
+    font-size: var(--hero-h2-size);
+    line-height: var(--hero-h2-height);
+    color: var(--hero-h2-color);
+}
+
+
+.hero h1 {
+    font-family: var(--hero-h1-font);
+    font-size: var(--hero-h1-size); 
+    line-height: var(--hero-h1-height);
+    color: var(--hero-h1-color);
+}
+
+.hero p {
+    font-family: var(--hero-p1-font);
+    font-size: var(--hero-p1-size);
+    line-height: var(--hero-p1-height);
+    color: var(--hero-p1-color);
+    margin-bottom: 40px;
+}
+
+.hero .button {
+    display: inline-block;
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.hero .button:hover {
+    background-color: var(--button-hover-background-color);
+}
+
+.what-i-do {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.what-i-do .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.what-i-do h2 {
+    font-family: 'CabinetGrotesk', sans-serif;
+    font-size: 48px;
+    color: var(--hero-h1-color);
+}
+
+.icon-description {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    flex-direction: column; /* Change to column layout */
+}
+
+.icon-description .icon {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-description .icon img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.icon-description .description {
+    text-align: center;
+    max-width: 200px;
+    margin-top: 10px; /* Add margin to separate icon and text */
+}
+
+.icon-description .description h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.icon-description .description p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.projects,
+.about,
+.contact {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 5rem 20px; 
+}
+
+.projects h2,
+.about h2,
+.contact h2 {
+    font-family: 'CabinetGrotesk', sans-serif;
+    font-size: 48px;
+    color: var(--hero-h1-color);
+}
+
+.project h3 {
+    font-size: 24px;
+    color: var(--hero-h1-color); 
+    margin-bottom: 30px;
+}
+
+.projects p,
+.about p,
+.contact p {
+    font-family: var(--hero-p1-font);
+    font-size: var(--hero-p1-size);
+    line-height: var(--hero-p1-height);
+    color: var(--hero-p1-color);
+}
+
+.project-container {
+    display: flex;
+    gap: 30px;
+    flex-direction: row-reverse;
+}
+
+div.project-text > p:first-child {
+    margin-top: 0;
+}
+
+.project-content {
+    display: flex;
+    gap: 20px;
+}
+
+.project-images {
+    text-align: right;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-images img {
+    max-width: 100%;
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+}
+
+.project-images img:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    width: 90%; 
+    max-width: 900px; 
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySlides img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0%;
+    user-select: none;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.next {
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+.project-text {
+    flex: 2;
+}
+
+.about .about-content {
+    display: flex;
+    gap: 30px;
+}
+
+div.about-text > p:first-child {
+    margin-top: 0;
+}
+
+.about img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 500px; 
+    border-radius: 10px;;
+}
+
+.about img:hover {
+    /* transform property */
+}
+
+.about .about-text {
+    flex: 1;
+}
+
+.about .button,
+.contact .button {
+    display: inline-block;
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.about .button:hover,
+.contact .button:hover {
+    background-color: var(--button-hover-background-color);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 100%;
+}
+
+.email-link {
+    color: var(--link-color); 
+    text-decoration: none; 
+}
+.email-link:hover {
+    text-decoration: underline; 
+}
+
+.contact form label {
+    font-family: var(--hero-p1-font);
+    font-size: var(--hero-p1-size);
+    margin-top: 1rem;
+    color: var(--link-color);
+    text-align: left;
+}
+
+.contact form input,
+.contact form textarea {
+    font-family: var(--hero-p1-font);
+    font-size: var(--hero-p1-size);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1E1E1E;
+    color: #FFF;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form .submit-button {
+    display: inline-block;
+    background-color: var(--button-background-color); 
+    color: var(--button-color); 
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .submit-button:hover {
+    background-color: var(--button-hover-background-color);
+}
+
+footer {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    color: var(--hero-h1-color);
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --hero-h1-size: 60px;
+        --hero-h1-size-mobile: 42px;
+        --hero-h2-size: 16px;
+        --hero-p1-size: 16px;
+    }
+    h1 {
+        font-size: var(--hero-h1-size-mobile);
+    }
+}
+
+.language-switcher {
+    position: absolute;
+    top: 47px;
+    right: 55px;
+}
+
+.language-button {
+    font-family: 'CabinetGrotesk', sans-serif;
+    font-size: 16px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.language-button:hover {
+    color: var(--link-hover-color);
+}
+
+.language-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.language-dropdown li {
+    list-style: none;
+}
+
+.language-dropdown li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.language-dropdown li a:hover {
+    background-color: #555;
+}
