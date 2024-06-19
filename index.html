@@ -22,7 +22,16 @@
         <div class="hamburger-menu" id="hamburger-menu">
             <span class="material-icons">menu</span>
         </div>
-        
+    
+        <nav id="desktop-nav" class="desktop-nav">
+            <ul>
+                <li><a href="#home" data-translate="navigation.home">HOME</a></li>
+                <li><a href="#about" data-translate="navigation.about">ABOUT ME</a></li>
+                <li><a href="#projects" data-translate="navigation.projects">MY PROJECTS</a></li>
+                <li><a href="#contact" data-translate="navigation.contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    
         <nav id="mobile-nav" class="mobile-nav">
             <ul>
                 <li><a href="#home" data-translate="navigation.home">HOME</a></li>
@@ -31,16 +40,7 @@
                 <li><a href="#contact" data-translate="navigation.contact">CONTACT</a></li>
             </ul>
         </nav>
-        
-        <nav id="desktop-nav">
-            <ul>
-                <li><a href="#home" data-translate="navigation.home">HOME</a></li>
-                <li><a href="#about" data-translate="navigation.about">ABOUT ME</a></li>
-                <li><a href="#projects" data-translate="navigation.projects">MY PROJECTS</a></li>
-                <li><a href="#contact" data-translate="navigation.contact">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>    
+    </header>
 
     <section id="home" class="hero">
         <div class="container">
@@ -287,16 +287,16 @@
 });
     </script>
     
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerMenu = document.getElementById('hamburger-menu');
-    const mobileNav = document.getElementById('mobile-nav');
-    
-    hamburgerMenu.addEventListener('click', function() {
-        mobileNav.classList.toggle('active');
-    });
-});
-</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerMenu = document.getElementById('hamburger-menu');
+            const mobileNav = document.getElementById('mobile-nav');
+            
+            hamburgerMenu.addEventListener('click', function() {
+                mobileNav.classList.toggle('active');
+            });
+        });
+    </script>
 
     
 </body>

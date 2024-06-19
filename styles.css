@@ -515,8 +515,8 @@ footer p {
 
 .language-switcher {
     position: absolute;
-    top: 47px;
-    right: 55px;
+    top: 47px; 
+    right: 50px; 
 }
 
 .language-button {
@@ -528,16 +528,15 @@ footer p {
     cursor: pointer;
 }
 
-.language-button:hover {
-    color: var(--link-hover-color);
-}
 
 .language-dropdown {
     display: none;
     position: absolute;
+    text-align: center;
     background-color: #333;
     padding: 10px;
     border-radius: 5px;
+    right: 0;
     z-index: 1;
 }
 
@@ -619,5 +618,23 @@ footer p {
 
     .mobile-nav.active {
         display: block;
+    }
+    
+    .language-switcher {
+        position: static; /* Reset position */
+        text-align: right; /* Align text to the right */
+        margin-right: 40px;
+    }
+
+    .language-dropdown {
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        margin-right: 40px;
+        right: 0;
+        z-index: 1;
     }
 }
