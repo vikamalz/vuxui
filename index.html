@@ -18,9 +18,12 @@
                 <li><a href="#" data-lang="uk" data-translate="language.ukrainian">Ukrainian</a></li>
             </ul>
         </div>
+    
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span class="material-icons">menu</span>
+        </div>
         
-        
-        <nav>
+        <nav id="mobile-nav" class="mobile-nav">
             <ul>
                 <li><a href="#home" data-translate="navigation.home">HOME</a></li>
                 <li><a href="#about" data-translate="navigation.about">ABOUT ME</a></li>
@@ -28,7 +31,16 @@
                 <li><a href="#contact" data-translate="navigation.contact">CONTACT</a></li>
             </ul>
         </nav>
-    </header>
+        
+        <nav id="desktop-nav">
+            <ul>
+                <li><a href="#home" data-translate="navigation.home">HOME</a></li>
+                <li><a href="#about" data-translate="navigation.about">ABOUT ME</a></li>
+                <li><a href="#projects" data-translate="navigation.projects">MY PROJECTS</a></li>
+                <li><a href="#contact" data-translate="navigation.contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>    
 
     <section id="home" class="hero">
         <div class="container">
@@ -231,7 +243,7 @@
                 return response.json();
             })
             .then(data => {
-                // Update elements with data-translate attribute
+
                 document.querySelectorAll('[data-translate]').forEach(element => {
                     const key = element.getAttribute('data-translate');
                     if (data[key]) {
@@ -239,7 +251,7 @@
                     }
                 });
 
-                // Update language dropdown options
+
                 languageDropdown.querySelectorAll('a').forEach(link => {
                     const langCode = link.getAttribute('data-lang');
                     const langKey = `language.${langCode}`;
@@ -248,7 +260,7 @@
                     }
                 });
 
-                // Update language button text
+               
                 const languageButtonKey = `language.${lang}`;
                 if (data[languageButtonKey]) {
                     languageButton.textContent = data[languageButtonKey];
@@ -262,11 +274,11 @@
             event.preventDefault();
             const lang = this.getAttribute('data-lang');
             changeLanguage(lang);
-            languageDropdown.style.display = 'none'; // Hide dropdown after selection
+            languageDropdown.style.display = 'none'; 
         });
     });
 
-    // Change to default language on page load
+     
     changeLanguage(defaultLanguage);
 
     languageButton.addEventListener('click', function() {
@@ -275,6 +287,17 @@
 });
     </script>
     
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const mobileNav = document.getElementById('mobile-nav');
+    
+    hamburgerMenu.addEventListener('click', function() {
+        mobileNav.classList.toggle('active');
+    });
+});
+</script>
+
     
 </body>
 </html>

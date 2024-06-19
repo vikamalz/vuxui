@@ -84,11 +84,11 @@ header nav ul li a:hover {
 .scroll-down-button {
     text-decoration: none;
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 3px solid var(--arrow-color); 
     display: flex;
@@ -111,7 +111,6 @@ header nav ul li a:hover {
         transform: translateY(-10px);
     }
 }
-
 
 .hero {
     text-align: left;
@@ -144,6 +143,9 @@ header nav ul li a:hover {
     font-size: var(--hero-h1-size); 
     line-height: var(--hero-h1-height);
     color: var(--hero-h1-color);
+    margin-bottom: 70px;
+    margin-top: 7dvi;
+
 }
 
 .hero p {
@@ -192,7 +194,7 @@ header nav ul li a:hover {
     align-items: center;
     width: 100%;
     max-width: 800px;
-    flex-direction: column; /* Change to column layout */
+    flex-direction: column; 
 }
 
 .icon-description .icon {
@@ -212,7 +214,7 @@ header nav ul li a:hover {
 .icon-description .description {
     text-align: center;
     max-width: 200px;
-    margin-top: 10px; /* Add margin to separate icon and text */
+    margin-top: 10px; 
 }
 
 .icon-description .description h3 {
@@ -552,4 +554,70 @@ footer p {
 
 .language-dropdown li a:hover {
     background-color: #555;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 37px;
+    z-index: 1000;
+}
+
+.hamburger-menu .material-icons {
+    font-size: 36px;
+    color: var(--link-color);
+}
+
+
+
+/* Mobile Navigation */
+.mobile-nav {
+    display: none;
+    background-color: var(--background-color);
+    position: absolute;
+    top: 70px;
+    width: 200px;
+    left: 10px;
+    z-index: 999;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.mobile-nav ul li {
+    width: 100%; 
+    text-align: center;
+}
+
+.mobile-nav ul li a {
+    display: block; 
+    padding: 10px;
+    color: var(--link-color);
+    text-decoration: none;
+    font-family: 'CabinetGrotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+    
+    #desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav.active {
+        display: block;
+    }
 }
