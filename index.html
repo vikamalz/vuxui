@@ -298,6 +298,59 @@
         });
     </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const contactForm = document.getElementById('contactForm');
+    
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            const formData = new FormData(contactForm);
+    
+            fetch('submit.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Your message has been sent successfully!');
+                    contactForm.reset();
+                } else {
+                    alert('There was an error sending your message. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error sending your message. Please try again.');
+            });
+        });
+    });
+    </script>
+    
+    <?php
+    header('Content-Type: application/json');
+    
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $name = htmlspecialchars($_POST['name']);
+        $email = htmlspecialchars($_POST['email']);
+        $message = htmlspecialchars($_POST['message']);
+    
+        // Example of sending an email (this should be adapted to your email sending logic)
+        $to = 'v.mudrow@gmail.com';
+        $subject = 'New Contact Form Submission';
+        $body = "Name: $name\nEmail: $email\nMessage: $message";
+        $headers = "From: $email";
+    
+        if (mail($to, $subject, $body, $headers)) {
+            echo json_encode(['success' => true]);
+        } else {
+            echo json_encode(['success' => false]);
+        }
+    } else {
+        echo json_encode(['success' => false]);
+    }
+    ?>
     
 </body>
 </html>

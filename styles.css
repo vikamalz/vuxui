@@ -128,6 +128,7 @@ header nav ul li a:hover {
     margin: 0 auto;
     padding: 0 20px;
     margin-bottom: 200px;
+    width: 100%;
 }
 
 .hero h2 {
@@ -608,6 +609,16 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        margin-right: 0px;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: 'Karla', sans-serif;
+        background-color: var(--background-color);
+        color: var(--link-color);
+    }
+    
+
     .hamburger-menu {
         display: block;
     }
@@ -621,8 +632,8 @@ footer p {
     }
     
     .language-switcher {
-        position: static; /* Reset position */
-        text-align: right; /* Align text to the right */
+        position: static; 
+        text-align: right; 
         margin-right: 40px;
     }
 
@@ -637,4 +648,31 @@ footer p {
         right: 0;
         z-index: 1;
     }
+
+    .what-i-do .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-container {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+.about .about-content {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.about img {
+    width: auto;
+    height: auto;
+    max-width: 50%;
+    max-height: 500px; 
+    border-radius: 10px;;
+}
+
 }
