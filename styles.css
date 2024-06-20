@@ -39,7 +39,7 @@ header {
     top: 0;
     z-index: 999;
     background-color: var(--background-color); 
-    padding: 3rem 40px;
+    padding: 3rem 0;
     text-align: left;
     box-sizing: border-box;
 }
