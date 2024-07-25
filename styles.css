@@ -68,7 +68,7 @@ header nav ul li a:hover {
     max-width: 1200px;
     padding: 0 20px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
 }
 
 
@@ -140,6 +140,8 @@ header nav ul li a:hover {
     font-size: var(--hero-h2-size);
     line-height: var(--hero-h2-height);
     color: var(--hero-h2-color);
+    margin: 0;
+    position: relative;
 }
 
 
@@ -149,7 +151,7 @@ header nav ul li a:hover {
     line-height: var(--hero-h1-height);
     color: var(--hero-h1-color);
     margin-bottom: 70px;
-    margin-top: 7dvi;
+    margin-top: 70px;
 
 }
 
