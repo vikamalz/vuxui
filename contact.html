@@ -90,8 +90,6 @@
               </div>
             </div>
           
-
-              <!-- Add the contact form here -->
   <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9">
     <form action="contact.php" method="post" class="contact-form">
       <div class="form-group">
@@ -111,6 +109,16 @@
   </div>
 </div> <!-- /.row -->
 
+<div class="row">
+  <div class="col-xs-12">
+    <?php if (!empty($message)): ?>
+      <div class="alert alert-info">
+        <?php echo $message; ?>
+      </div>
+    <?php endif; ?>
+  </div>
+</div>
+
         <nav class="page-nav clear">
           <div class="container">
             <div class="flex flex-middle space-between">
@@ -120,9 +128,7 @@
           </div>
           <!-- /.page-nav -->
         </nav>
-        
         <!-- /.container -->
-
       </div> <!-- /.pt-tablecell -->
     </div> <!-- /.pt-table -->
   </main> <!-- /.site-wrapper -->

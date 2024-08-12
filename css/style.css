@@ -7,6 +7,13 @@ body {
   background-color: #0a0f19;
 }
 
+.alert-info {
+  background-color: transparent;
+  border-color: transparent;
+  color: #fff;
+
+}
+
 a {
   color: inherit;
   transition: all 0.3s ease 0s;
