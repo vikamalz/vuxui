@@ -42,19 +42,10 @@ h1 {
   font-weight: 700;
 }
 
-h4 {
-  margin-left: 18px;
-  margin-right: 18px;
-}
 
-p {
-  margin-bottom: 10px;
-  margin-left: 18px;
-  margin-right: 18px;
-}
-
-li {
+.text {
   margin-left:18px;
+  margin-right: 18px;
 }
 
 p:last-child {
@@ -748,7 +739,7 @@ label {
   left: 50%;
   position: absolute;
   text-align: center;
-  top: 60%;
+  top: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
 }
@@ -782,6 +773,8 @@ label {
 }
 .service-hex:hover p {
   height: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .testimonials .item {
