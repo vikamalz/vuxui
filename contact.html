@@ -1,24 +1,3 @@
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
-
-<!-- 
-THEME: Phantom - Bootstrap Portfolio Template
-VERSION: 1.0.0
-AUTHOR: Themefisher
-
-HOMEPAGE: https://themefisher.com/products/phantom-best-bootstrap-portfolio-template/
-DEMO: https://demo.themefisher.com/phantom/
-GITHUB: https://github.com/themefisher/Phantom-Bootstrap-Portfolio-Template
-
-WEBSITE: https://themefisher.com
-TWITTER: https://twitter.com/themefisher
-FACEBOOK: https://www.facebook.com/themefisher
--->
-
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -110,53 +89,27 @@ FACEBOOK: https://www.facebook.com/themefisher
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-7 col-md-7 col-md-offset-1 col-lg-offset-2">
-              <div class="section-title clear">
-                <h3>Send me a meesage</h3>
-                <span class="bar-dark"></span>
-                <span class="bar-primary"></span>
-              </div>
+          
 
-              <form id="contact-form" class="row contact-form no-gutter" method="post">
-                <div class="col-xs-12 col-sm-6">
-                  <div class="input-field name">
-                    <span class="input-icon" id="name"><i class="tf-profile-male"></i></span>
-                    <input type="text" class="form-control" placeholder="Enter your name" required>
-                  </div>
-                </div> <!-- ./col- -->
-                <div class="col-xs-12 col-sm-6">
-                  <div class="input-field email">
-                    <span class="input-icon" id="email"><i class="tf-envelope2"></i></span>
-                    <input type="email" class="form-control" name="email" placeholder="Your email address" required>
-                  </div>
-                </div> <!-- ./col- -->
-                <div class="col-xs-12 col-sm-12">
-                  <div class="input-field">
-                    <span class="input-icon" id="subject"><i class="tf-pricetags"></i></span>
-                    <input type="text" class="form-control" name="subject" placeholder="Enter the discussion title" required>
-                  </div>
-                </div> <!-- ./col- -->
-                <div class="col-xs-12 col-sm-12">
-                  <div class="input-field message">
-                    <span class="input-icon"><i class="tf-pencil2"></i></span>
-                    <textarea name="message" id="message" class="form-control"
-                      placeholder="Write your message" required></textarea>
-                  </div>
-                </div> <!-- ./col- -->
-                <div class="col-xs-12 col-sm-12">
-                  <div class="input-field">
-                    <span class="btn-border">
-                      <button type="submit" class="btn btn-primary btn-custom-border text-uppercase">Send Message
-                        now</button>
-                    </span>
-                  </div>
-                  <div class="msg-success">Your Message was sent successfully</div>
-                  <div class="msg-failed">Something went wrong, please try again later</div>
-                </div> <!-- ./col- -->
-              </form> <!-- /.row -->
-            </div> <!-- /.col- -->
-          </div> <!-- /.row -->
-        </div> <!-- /.container -->
+              <!-- Add the contact form here -->
+  <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9">
+    <form action="contact.php" method="post" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" class="form-control" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+  </div>
+</div> <!-- /.row -->
 
         <nav class="page-nav clear">
           <div class="container">
