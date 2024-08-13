@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message = "Oops, your email address seems to be wrong.";
     } else {
         // Set the recipient email address
-        $to = "v.mudrow@gmail.com"; // Your email address
+        $to = "contact@vuxui.de"; // Your email address
 
         // Set the email subject
         $subject = "New Contact Form Submission from $name";
