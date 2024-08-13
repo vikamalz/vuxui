@@ -662,6 +662,7 @@ label {
   font-family: 'Poppins', sans-serif;
   padding-left: 32px;
   margin-bottom: 20px;
+  height: auto;
   width: 100%;
 }
 .history-item > * {
@@ -707,7 +708,7 @@ label {
   border-left: 33px solid transparent;
   border-right: 33px solid transparent;
 }
-.history-hex::before {
+.history-hex::before {url(service-hex:)
   bottom: 100%;
   border-bottom: 19.05px solid #d7d8db;
 }
@@ -1090,6 +1091,7 @@ label {
   padding-top: 60px;
 }
 .pt-table.desktop-768 .pt-tablecell .page-nav {
+  padding-bottom: 110px;
   bottom: 40px;
 }
 
@@ -1234,6 +1236,7 @@ label {
 .hexagon-centered {
   display: flex;
   justify-content: center;
+  margin-bottom: 70px;
 }
 
 /*------------------------------------------------
@@ -1259,10 +1262,10 @@ label {
   }
 
   .page-title h2 {
-    font-size: 40px;
+    font-size: 62px;
   }
   .page-title .title-bg {
-    font-size: 100px;
+    font-size: 140px;
   }
   .author-image-large {
     position: static;
@@ -1302,6 +1305,7 @@ label {
     padding-right: 15px;
   }
   .page-nav {
+    position: relative;
     bottom: 0;
   }
   .page-nav .flex {
@@ -1335,7 +1339,7 @@ label {
     font-size: 35px;
   }
   .page-title .title-bg {
-    font-size: 50px;
+    font-size: 62px;
   }
   .hexagon-item {
     float: none;
@@ -1401,7 +1405,7 @@ label {
     transform: scale(1.8);
   }
   .service-hex:hover .content {
-    width: 120%;
+    width: 200%;
   }
   .history-block {
     margin-bottom: 30px;
