@@ -1033,7 +1033,7 @@ label {
   margin-left: 5px;
 }
 .contact-form .input-field label.error {
-  color: #ff0000;
+  color: #f26b6b;
   font-size: 13px;
   margin: 0;
 }
@@ -1460,3 +1460,62 @@ label {
   border-color: #d7d8db;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1050; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-dialog {
+  position: relative;
+  margin: auto; 
+  top: 20%; 
+}
+
+
+.modal-content {
+  border-radius: 10px;
+  margin: 0; 
+  background-color: #0a0f19;
+  color: #ffffff;
+}
+
+
+.modal-header, .modal-footer {
+  border: none;
+}
+
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-body p {
+  color: #ffffff
+}
+
+/* Icon styles */
+.modal-body .icon {
+  font-size: 50px; 
+  color: #ffffff; 
+}
+
+
+.modal-body .icon.success {
+  color: #98FF98;
+}
+
+.modal-body .icon.error {
+  color: #f26b6b;
+}
+
+
