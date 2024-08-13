@@ -41,7 +41,7 @@
 }
 
 /* border color */
-.testimonials .owl-dot.active {
+.testimonials .slick-dots .slick-active button {
   border-color: #FA6862;
 }
 
@@ -60,8 +60,7 @@
 }
 
 /* fill color */
-.service-hex:hover .fill,
-.service-hex:hover .st1 {
+.service-hex .st0 {
   fill: #FA6862;
 }
 /*# sourceMappingURL=red.css.map */

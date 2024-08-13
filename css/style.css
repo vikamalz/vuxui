@@ -208,7 +208,7 @@ label {
 }
 
 .loading-mask {
-  background-color: #98FF98;
+  background-color: #000000;
   height: 100%;
   left: 0;
   position: absolute;
@@ -708,7 +708,7 @@ label {
   border-left: 33px solid transparent;
   border-right: 33px solid transparent;
 }
-.history-hex::before {url(service-hex:)
+.history-hex::before {
   bottom: 100%;
   border-bottom: 19.05px solid #d7d8db;
 }
@@ -1305,7 +1305,7 @@ label {
     padding-right: 15px;
   }
   .page-nav {
-    position: relative;
+    po
     bottom: 0;
   }
   .page-nav .flex {

@@ -112,16 +112,30 @@
 			$(".preview-wrapper").toggleClass("extend");
 			return false;
 		});
-		if ($(window).width() < 768 ) {            
+		
+		// Load the saved color from localStorage when the page is loaded
+		$(document).ready(function() {
+			let savedColor = localStorage.getItem("selectedColor");
+			if (savedColor) {
+				$("#color-changer").attr("href", "css/colors/" + savedColor + ".css");
+			}
+		});
+		
+		if ($(window).width() < 768) {            
 			//$(".preview-wrapper").removeClass("extend");
 		}
-		$(".color-options li").on("click", function(){			
-			$("#color-changer").attr({
-				"href":"css/colors/"+$(this).attr("data-color")+".css"
-			});
+	
+		$(".color-options li").on("click", function() {
+			let selectedColor = $(this).attr("data-color");
+			$("#color-changer").attr("href", "css/colors/" + selectedColor + ".css");
+	
+			// Save the selected color to localStorage
+			localStorage.setItem("selectedColor", selectedColor);
+			
 			return false;
 		});
 	}
+	
 	
 	$(window).on("load", function() {
 		isotopeMasonry();
