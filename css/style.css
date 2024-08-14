@@ -635,6 +635,7 @@ label {
 .history-block {
   background-color: #1e2530;
   position: relative;
+  margin-bottom: 100px;
 }
 .history-block .section-title {
   background-color: #1e2530;
@@ -654,7 +655,7 @@ label {
 
 .history-scroller {
   padding-top: 82px;
-  max-height: 677px;
+  max-height: 100%;
 }
 
 .history-item {
@@ -754,9 +755,9 @@ label {
   margin-bottom: 20px;
 }
 .service-hex p {
-  font-size: 14px;
+  font-size: 12px;
   height: 0;
-  line-height: 24px;
+  line-height: 16px;
   overflow: hidden;
   transition: all 0.4s ease 0s;
 }
@@ -774,8 +775,8 @@ label {
 }
 .service-hex:hover p {
   height: 100px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .testimonials .item {
@@ -1396,7 +1397,7 @@ label {
   .service-hex {
     float: none;
     margin: 0 auto 40px;
-    width: 60%;
+    width: 40%;
   }
   .service-hex:last-child {
     margin-bottom: auto;
