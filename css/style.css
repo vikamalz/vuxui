@@ -1031,9 +1031,7 @@ label {
 .contact-form .input-field.name {
   margin-right: 5px;
 }
-.contact-form .input-field.email {
-  margin-left: 5px;
-}
+
 .contact-form .input-field label.error {
   color: #f26b6b;
   font-size: 13px;
