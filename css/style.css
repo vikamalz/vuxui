@@ -1090,6 +1090,7 @@ label {
   padding-top: 60px;
 }
 .pt-table.desktop-768 .pt-tablecell .page-nav {
+  position: relative;
   padding-bottom: 110px;
   bottom: 40px;
 }
@@ -1279,6 +1280,10 @@ label {
   .about-author + p {
     margin-bottom: 50px;
   }
+  .history-block {
+    margin-bottom: 200px;
+  }
+
   .service-hex {
     width: 33.3333%;
   }
@@ -1304,7 +1309,7 @@ label {
     padding-right: 15px;
   }
   .page-nav {
-    po
+    position: relative;
     bottom: 0;
   }
   .page-nav .flex {
